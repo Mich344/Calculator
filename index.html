@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js"></script>
+  </head>
+  <!-- -->
+  
+  <body class="datecolor">
+    <div class="desing">
+      <div class="container">
+        <h1 class="title">Calculator App</h1>
+        <Center>
+          <div class="color">
+            <input type="radio" onclick="white()" style="accent-color: rgb(255, 255, 255); margin-left: 230px" name="colores" id="white">
+            <input type="radio" onclick="gray()" style="accent-color: #4c4c4c" name="colores" id="red">
+            <input type="radio" onclick="blue()" style="accent-color: #004085" name="colores" id="orange">
+        <div class="row">
+          <div class="col" style="color: white"><strong>Cal</strong></div>
+          <div class="col" style="color: white; margin-left: 183px"><strong>Theme</strong></div>
+
+        </div>
+  <!-- -->
+        <div class="row">
+          <div class="result">
+            <input type="text" class="result" id="result"  readonly />
+          </div>
+        </div>
+  <!-- -->
+          <div class="row">
+            <div class="col">
+              <button type="button" onclick="valor('7')"  class="btn btn-light">7</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('8')" class="btn btn-light">8</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('9')" class="btn btn-light">9</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="borrarDigito()"class="btn btn-light" style="background-color:#ff8f00; color: white"><strong>DEL</strong></button>
+            </div>
+          </div>
+  <!-- -->
+          <div class="row">
+            <div class="col">
+              <button type="button" onclick="valor('4')" class="btn btn-light">4</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('5')" class="btn btn-light">5</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('6')" class="btn btn-light">6</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('+')" class="btn btn-light" style="background-color:#ff8f00; color: white"><strong>+</strong></button>
+            </div>
+          </div>
+  <!-- -->
+          <div class="row">
+            <div class="col">
+              <button type="button" onclick="valor('1')" class="btn btn-light">1</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('2')" class="btn btn-light">2</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('3')" class="btn btn-light">3</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('-')" class="btn btn-light" style="background-color:#ff8f00; color: white"><strong>-</strong></button>
+            </div>
+          </div>
+  <!-- -->
+          <div class="row">
+            <div class="col">
+              <button type="button" onclick="valor('.')" class="btn btn-light">.</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('0')" class="btn btn-light">0</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('/')" class="btn btn-light" style="background-color:#ff8f00; color: white" ><strong>/</strong></button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="valor('*')" class="btn btn-light" style="background-color:#ff8f00; color: white"><strong>x</strong></button>
+            </div>
+          </div>
+  <!-- -->
+          <div class="row">
+            <div class="col">
+              <button type="button" onclick="deleted()" class="btn btn-light center">RESET</button>
+            </div>
+            <div class="col">
+              <button type="button" onclick="calcular()" class="btn btn-light center">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Center>
+    </div>
+    <!-- Optional JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
